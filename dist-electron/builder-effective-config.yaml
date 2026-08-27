@@ -1,0 +1,17 @@
+directories:
+  output: dist-electron
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - public/**/*
+extraMetadata:
+  main: build/electron.js
+appId: com.weatherpro.app
+productName: WeatherPro
+win:
+  target: nsis
+  icon: public/icon.png
+extends: react-cra
+electronVersion: 43.4.0

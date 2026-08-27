@@ -1,0 +1,15 @@
+{
+  "appId": "com.weatherpro.app",
+  "productName": "WeatherPro",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "build/**/*",
+    "public/**/*"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "public/icon.png"  // ← Utilisez le PNG à la place
+  }
+}
